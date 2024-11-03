@@ -5,16 +5,16 @@ document.querySelector('#header').innerHTML = `
             <div class="flex items-center justify-between w-[35%]">
                 <div class="logo p-4"></div>
                 <ul class="gap-3 flex">
-                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../home/index.html">home</a></li>
                     <li>
                         <div class="dropdown">
                             <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 profil
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="profil/organisasi.html">Organisasi</a></li>
-                                <li><a class="dropdown-item" href="profil/akreditasi.html">Akreditasi</a></li>
-                                <li><a class="dropdown-item" href="profil/status_sttc.html">Status STTC</a></li>
+                                <li><a class="dropdown-item" href="../profil/organisasi.html">Organisasi</a></li>
+                                <li><a class="dropdown-item" href="../profil/akreditasi.html">Akreditasi</a></li>
+                                <li><a class="dropdown-item" href="../profil/status_sttc.html">Status STTC</a></li>
                             </ul>
                         </div>
                     </li>
@@ -24,13 +24,13 @@ document.querySelector('#header').innerHTML = `
                                 Fasilitas
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="fasilitas/mesjid.html">mesjid</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/aula.html">aula</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/lab.html">lab komputer</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/sarana.html">sarana olahraga</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/ruang_kelas.html">ruang kelas</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/kantin.html">kantin</a></li>
-                                <li><a class="dropdown-item" href="fasilitas/perpus.html">perpustakaan</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/mesjid.html">mesjid</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/aula.html">aula</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/lab.html">lab komputer</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/sarana.html">sarana olahraga</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/ruang_kelas.html">ruang kelas</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/kantin.html">kantin</a></li>
+                                <li><a class="dropdown-item" href="../fasilitas/perpus.html">perpustakaan</a></li>
                             </ul>
                         </div>
                     </li>
@@ -40,10 +40,10 @@ document.querySelector('#header').innerHTML = `
                                 layanan
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="layanan/verifikasi.html">verifikasi ijazah</a></li>
-                                <li><a class="dropdown-item" href="layanan/perpus_digital.html">perpustakaan digital</a></li>
-                                <li><a class="dropdown-item" href="layanan/jurnal.html">jurnal</a></li>
-                                <li><a class="dropdown-item" href="layanan/e_learning.html">e-learning</a></li>
+                                <li><a class="dropdown-item" href="../layanan/verifikasi.html">verifikasi ijazah</a></li>
+                                <li><a class="dropdown-item" href="../layanan/perpus_digital.html">perpustakaan digital</a></li>
+                                <li><a class="dropdown-item" href="../layanan/jurnal.html">jurnal</a></li>
+                                <li><a class="dropdown-item" href="../layanan/e_learning.html">e-learning</a></li>
                             </ul>
                         </div>
                         </li>
@@ -53,8 +53,8 @@ document.querySelector('#header').innerHTML = `
                                 tautan
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="tautan/lpm.html">LPPM</a></li>
-                                <li><a class="dropdown-item" href="tautan/upm.html">UPM</a></li>
+                                <li><a class="dropdown-item" href="../tautan/lpm.html">LPPM</a></li>
+                                <li><a class="dropdown-item" href="../tautan/upm.html">UPM</a></li>
                             </ul>
                         </div>
                     </li>
