@@ -5,7 +5,7 @@ function buatElementHeader() {
     <!-- bagian navbar -->
             <nav class="flex capitalize gap-4 justify-between items-center">
                 <div class="flex items-center justify-between w-[35%]">
-                    <div class="logo p-4"></div>
+                    <img src="../img/image.png" class="logo">
                     <ul class="gap-3 flex">
                         <li><a id="home" href="../home/index.html?aktif=home">home</a></li>
                         <li>
@@ -64,7 +64,6 @@ function buatElementHeader() {
                 </div>
     
     
-                /
                 
                 <!-- bagian pencarian -->
                 <div class="flex items-center gap-4">
@@ -98,7 +97,10 @@ function sorotTautanAktif() {
     const induk = tautanAktif.parentElement.parentElement.previousElementSibling
     if (tautanAktif) {
         tautanAktif.classList.add('aktif');
-        induk.classList.add('aktif');
+        if (induk.tagName.toLowerCase() !== 'img') {
+            // console.log('Induk elemen adalah <img>');
+            induk.classList.add('aktif');
+        } 
     }
 }
 
