@@ -7,11 +7,11 @@ function buatElementHeader() {
                 <div class="flex items-center justify-between w-[35%]">
                     <div class="logo p-4"></div>
                     <ul class="gap-3 flex">
-                        <li><a href="../home/index.html">home</a></li>
+                        <li><a id="home" href="../home/index.html?aktif=home">home</a></li>
                         <li>
                             <div class="dropdown">
                                 <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    profil
+                                    Profil
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" id="organisasi" href="../profil/organisasi.html?aktif=organisasi">Organisasi</a></li>
@@ -26,37 +26,37 @@ function buatElementHeader() {
                                     Fasilitas
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../fasilitas/mesjid.html">mesjid</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/aula.html">aula</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/lab.html">lab komputer</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/sarana.html">sarana olahraga</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/ruang_kelas.html">ruang kelas</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/kantin.html">kantin</a></li>
-                                    <li><a class="dropdown-item" href="../fasilitas/perpus.html">perpustakaan</a></li>
+                                    <li><a class="dropdown-item" id="mesjid" href="../fasilitas/mesjid.html?aktif=mesjid">mesjid</a></li>
+                                    <li><a class="dropdown-item" id="aula" href="../fasilitas/aula.html?aktif=aula">aula</a></li>
+                                    <li><a class="dropdown-item" id="lab" href="../fasilitas/lab.html?aktif=lab">lab komputer</a></li>
+                                    <li><a class="dropdown-item" id="sarana" href="../fasilitas/sarana.html?aktif=sarana">sarana olahraga</a></li>
+                                    <li><a class="dropdown-item" id="ruang_kelas" href="../fasilitas/ruang_kelas.html?aktif=ruang_kelas">ruang kelas</a></li>
+                                    <li><a class="dropdown-item" id="kantin" href="../fasilitas/kantin.html?aktif=kantin">kantin</a></li>
+                                    <li><a class="dropdown-item" id="perpustakaan" href="../fasilitas/perpus.html?aktif=perpustakaan">perpustakaan</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
                                 <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    layanan
+                                    Layanan
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../layanan/verifikasi.html">verifikasi ijazah</a></li>
-                                    <li><a class="dropdown-item" href="../layanan/perpus_digital.html">perpustakaan digital</a></li>
-                                    <li><a class="dropdown-item" href="../layanan/jurnal.html">jurnal</a></li>
-                                    <li><a class="dropdown-item" href="../layanan/e_learning.html">e-learning</a></li>
+                                    <li><a class="dropdown-item" id="verifikasi" href="../layanan/verifikasi.html?aktif=verifikasi">verifikasi ijazah</a></li>
+                                    <li><a class="dropdown-item" id="perpus_digital" href="../layanan/perpus_digital.html?aktif=perpus_digital">perpustakaan digital</a></li>
+                                    <li><a class="dropdown-item" id="jurnal" href="../layanan/jurnal.html?aktif=jurnal">jurnal</a></li>
+                                    <li><a class="dropdown-item" id="e_learn" href="../layanan/e_learning.html?aktif=e_learn">e-learning</a></li>
                                 </ul>
                             </div>
                             </li>
                             <li>
                             <div class="dropdown">
                                 <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    tautan
+                                    Tautan
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../tautan/lpm.html">LPPM</a></li>
-                                    <li><a class="dropdown-item" href="../tautan/upm.html">UPM</a></li>
+                                    <li><a class="dropdown-item" id="lpm" href="../tautan/lpm.html?aktif=lpm">LPPM</a></li>
+                                    <li><a class="dropdown-item" id="upm" href="../tautan/upm.html?aktif=upm">UPM</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -64,7 +64,7 @@ function buatElementHeader() {
                 </div>
     
     
-                
+                /
                 
                 <!-- bagian pencarian -->
                 <div class="flex items-center gap-4">
@@ -84,11 +84,11 @@ function buatElementHeader() {
 function ambilParameterURL() {
     const stringQuery = window.location.search;
     const parameterURL = new URLSearchParams(stringQuery);
+    console.log(parameterURL) 
     const parameter = {};
     parameterURL.forEach((nilai, kunci) => {
         parameter[kunci] = nilai;
     });
-    // console.log(parameter) 
     return parameter;
 }
 
