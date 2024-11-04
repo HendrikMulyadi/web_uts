@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman 2</title>
+</head>
+<body>
+    <h1>Halaman 2</h1>
+    <div id="tampilanData"></div>
+
+    <script>
+        function ambilParameterURL() {
+            const stringQuery = window.location.search;
+            const parameterURL = new URLSearchParams(stringQuery);
+            const parameter = {};
+            parameterURL.forEach((nilai, kunci) => {
+                parameter[kunci] = nilai;
+            });
+            return parameter;
+        }
+
+        window.onload = function() {
+            const parameter = ambilParameterURL();
+            document.getElementById('tampilanData').textContent = `Nama: ${parameter.nama}, Umur: ${parameter.umur}`;
+            console.log(parameter)
+        };
+    </script>
+</body>
+</html>

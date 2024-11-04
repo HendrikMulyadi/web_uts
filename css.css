@@ -24,3 +24,9 @@ footer div ul li:first-child {
     border-radius: 50%;
     background-size: 150%;
 }
+
+.aktif {
+    color: green;
+    font: bold;
+    border-bottom: 2px solid green;
+}
